@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  margin-right: 10px;
+}
+
+a :hover {
+  color: red;
+}
+
+nav {
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+video {
+  width: 100%;
+}

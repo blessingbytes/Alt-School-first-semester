@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="media.css" />
+    <title>Media</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <nav>
+          <a href="/about.html" target="_blank">About Me</a>
+          <a href="/form.html" target="_blank">Form</a>
+          <a href="table.html" target="_blank">Table</a>
+          <a href="media.html" target="_blank">Media</a>
+        </nav>
+      </div>
+      <div class="flex">
+        <div>
+          <picture>
+            <!--For Desktop -->
+            <source
+              srcset="./img/my photo.jpg"
+              media="(min-width: 1024px)"
+              type="image/jpeg"
+            />
+
+            <!-- For Tablet -->
+            <source
+              media="(min-width: 768px)"
+              srcset="./img/tablet.jpg"
+              type="image/jpg"
+            />
+
+            <!-- For Phone -->
+            <source
+              media="(min-width: 360px)"
+              srcset="./img/phone.jpg"
+              type="image/jpg"
+            />
+            <img src="" alt="" />
+          </picture>
+        </div>
+
+        <div>
+          <audio controls>
+            <source src="img/audio/audio.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+
+        <div>
+          <video controls>
+            <source src="/video/video.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
